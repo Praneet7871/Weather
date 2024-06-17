@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg,#006d77,#1e235b);
+  background-size: 400% 400%;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  animation: animate 3s ease infinite;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+input[type="text"] {
+  border: none;
+  height: 4vh;
+  border-radius: 20px;
+  flex: 1;
+  padding: 10px;
+  font-size: 20px;
+}
+input::placeholder {
+  color: rgb(122, 122, 122);
+  font-weight: 600;
+  font-size: 20px;
+}
+.search {
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-top: 30px;
+}
+.search img {
+  height: 40px;
+}
+.search button{
+  background-color: rgba(255, 255, 255, 0.457);
+  border: 1px white;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  color: white;
+  align-items: center;
+}
+
+.temp img {
+  width: 20vw;
+}
+
+.temp h1 {
+  font-size: 70px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.temp h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+}
+
+.info {
+  display: flex;
+  margin: 5vh;
+  color: white;
+  width: 40vw;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.humid {
+  gap: 20px;
+  font-size: 30px;
+}
+
+.info img {
+  height: 100px;
+}
+.wind {
+  gap: 20px;
+  font-size: 30px;
+}
+
+@keyframes animate {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+  @media screen and (max-width: 1500px){
+    .search {
+      width: 80vw;
+    }
+    .temp img{
+      width: 40vw;
+    }
+    .info{
+      width: 98vw;
+      margin: 10px 10px 10px 0;
+    }
+    .info img {
+      height: 40px;
+    }
+    h2 {
+      font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+}
+  }
+    
