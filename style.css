@@ -117,7 +117,7 @@ input::placeholder {
     }
   }
 
-  @media screen and (max-width: 1500px){
+@media (orientation: portrait){
     .search {
       width: 80vw;
     }
